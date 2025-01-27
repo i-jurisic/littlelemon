@@ -1,0 +1,57 @@
+/* SPECIALS */
+.specials {
+    height: 100%;
+    padding: 8rem 2rem;
+  }
+  
+  .specials-header {
+    display: grid;
+    place-items: center;
+  }
+  
+  .specials-title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-button {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    background-color: #fbdabb;
+    color: #333;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    width: 200px;
+    border: none;
+  }
+  
+  @media (min-width: 768px) {
+    .specials {
+      padding: 4rem 4rem;
+    }
+  
+    .specials-title {
+      font-size: 64px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .specials {
+      height: 100vh;
+      padding: 6rem 6rem;
+    }
+  
+    .specials-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .specials {
+      padding: 10rem 16rem;
+    }
+  }

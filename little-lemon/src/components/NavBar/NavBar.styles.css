@@ -1,0 +1,88 @@
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #edefee;
+  }
+  
+  /* NAV */
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    color: #333;
+  }
+  
+  .nav-links {
+    padding-left: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .nav-links:hover {
+    color: #ee9972;
+  }
+  
+  /* HAMBURGER */
+  .hamburger-on {
+    display: none;
+  }
+  
+  .nav-menu {
+    background-color: #333333;
+    color: #edefee;
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+    border-top-left-radius: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  
+  .nav-menu.active {
+    right: 0;
+    transition: 350ms;
+  }
+  
+  /* MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .nav-container {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .nav-links-container {
+      display: none;
+    }
+  
+    /* HAMBURGER */
+    .hamburger-on {
+      display: flex;
+      cursor: pointer;
+    }
+  
+    .hamburger-off {
+      display: none;
+    }
+  }

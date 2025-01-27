@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link as LinkS } from 'react-scroll';
 import { links } from '../../data';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
@@ -6,11 +6,11 @@ import { FaTimes } from 'react-icons/fa';
 import './NavBar.styles.css';
 
 const NavBar = () => {
-    const [nav, setNav] = useSate(false);
+    const [nav, setNav] = useState(false);
 
     const handleClick = () => {
         if (nav) {
-        return setNav(!nav)
+        return setNav(!nav);
         }
     };
 
@@ -59,13 +59,15 @@ return (
     <>
     <header ref={navRef}>
         <nav className='nav-container'>
-        <LinkS
-        to='hero'
-        smooth duration={550}
-        onClick={handleClick}
-        aria-label='On Click'>
-        <img src='./Logo.svg' alt='Logo' className='logo' />
-        </LinkS>
+          <LinkS
+            to='hero'
+            smooth
+            duration={550}
+            onClick={handleClick}
+            aria-label='On Click'
+          >
+            <img src='./Logo.svg' alt='logo' className='logo' />
+          </LinkS>
 
         <ul className='nav-links-conatiner'>{navLinks}</ul>
         <div onClick={() => setNav(!nav)} aria-label='On Click'>
